@@ -1,0 +1,42 @@
+.project-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+  }
+  
+  .project-image {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .project-card:hover {
+    .project-image {
+      transform: scale(1.1);
+    }
+    
+    .project-overlay {
+      opacity: 1;
+    }
+  }
+  
+  .project-features {
+    ul {
+      max-height: 120px;
+      overflow-y: auto;
+    }
+  }

@@ -1,1 +1,64 @@
 /* You can add global styles to this file, and also import other style files */
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'animate.css';
+
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --accent-color: #e74c3c;
+  --text-color: #2c3e50;
+  --light-bg: #f8f9fa;
+  --dark-bg: #343a40;
+}
+
+.theme-text-color {
+  color:#140c59 !important;
+}
+
+h2 {
+  color: #140c59;
+}
+
+.theme-bg-color {
+  background-color: #140c59 !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+.btn-custom {
+  // background: linear-gradient(45deg, var(--secondary-color), var(--accent-color));
+  background-color: #140c59;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}

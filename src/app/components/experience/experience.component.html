@@ -1,0 +1,53 @@
+<section id="experience" class="py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center mb-5">
+          <h2 class="display-5 fw-bold">Work Experience</h2>
+          <div class="divider mx-auto"></div>
+          <p class="lead pt-2">Since 2020, I’ve built a strong foundation in the IT/Tech industry through hands-on experience in both frontend and backend roles. My work has spanned e-commerce,marketing and service-based applications, where I’ve contributed to full-stack solutions using the MEAN stack. I’m now looking to join a collaborative, growth-focused team where I can apply my skills, share ideas, and deepen my technical expertise.</p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <div class="timeline">
+            <div class="timeline-item my-5" *ngFor="let exp of experiences; let i = index">
+              <div class="row">
+                <div class="col-md-3 mb-3">
+                  <div class="experience-meta">
+                    <h5 class="t fw-bold">{{ exp.duration }}</h5>
+                    <p class="text-muted mb-0">{{ exp.location }}</p>
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <div class="experience-content">
+                    <h4 class="fw-bold mb-1">{{ exp.position }}</h4>
+                    <h6 class="text-muted mb-3">{{ exp.company }}</h6>
+                    
+                    <div class="responsibilities mb-3">
+                      <h6 class="fw-semibold">Key Responsibilities:</h6>
+                      <ul class="list-unstyled">
+                        <li class="mb-2" *ngFor="let responsibility of exp.description">
+                          <i class="bi bi-check-circle-fill theme-text-color me-2"></i>
+                          {{ responsibility }}
+                        </li>
+                      </ul>
+                    </div>
+                    
+                    <div class="technologies">
+                      <h6 class="fw-semibold mb-2">Technologies Used:</h6>
+                      <div class="d-flex flex-wrap gap-2">
+                        <span class="badge bg-warning text-dark rounded-pill" *ngFor="let tech of exp.technologies">
+                          {{ tech }}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

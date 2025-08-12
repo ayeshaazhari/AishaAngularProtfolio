@@ -1,0 +1,74 @@
+<section id="projects" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center mb-5">
+          <h2 class="display-5 fw-bold">Featured Projects</h2>
+          <div class="divider mx-auto"></div>
+          <p class="lead">Showcasing my best work in MEAN stack development</p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4" *ngFor="let project of projects">
+          <div class="card project-card h-100 shadow">
+            <!-- <div class="project-image-container">
+               <img [src]="project.image" 
+                   [alt]="project.title" 
+                   class="card-img-top project-image"
+                   loading="lazy"> 
+              <div class="project-overlay">
+                <div class="project-links">
+                   <a [href]="project.demoUrl" 
+                     *ngIf="project.demoUrl"
+                     target="_blank" 
+                     class="btn btn-light btn-sm me-2">
+                    <i class="bi bi-eye me-1"></i>Live Demo
+                  </a> 
+              <a [href]="project.githubUrl" 
+                     *ngIf="project.githubUrl"
+                     target="_blank" 
+                     class="btn btn-outline-light btn-sm">
+                    <i class="bi bi-github me-1"></i>Code
+                  </a> 
+                </div>
+              </div> 
+            </div> -->
+            
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold bg-warning p-2 border rounded">{{ project.title }}</h5>
+              <p class="card-text text-muted flex-grow-1">{{ project.description }}</p>
+              
+              <div class="project-features mb-3">
+                <h6 class="fw-semibold mb-2">Key Features:</h6>
+                <ul class="list-unstyled">
+                  <li class="mb-1" *ngFor="let feature of project.features">
+                    <i class="bi bi-arrow-right text-primary me-2"></i>
+                    <small>{{ feature }}</small>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="project-tech mt-auto">
+                <div class="d-flex flex-wrap gap-1">
+                  <span class="badge bg-secondary rounded-pill small" 
+                        *ngFor="let tech of project.technologies">
+                    {{ tech }}
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- <div class="row mt-4">
+        <div class="col-12 text-center">
+          <a href="https://github.com/yourusername" 
+             target="_blank" 
+             class="btn btn-outline-primary btn-lg">
+            <i class="bi bi-github me-2"></i>View All Projects on GitHub
+          </a>
+        </div>
+      </div> -->
+    </div>
+  </section>

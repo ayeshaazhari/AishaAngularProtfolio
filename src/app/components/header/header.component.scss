@@ -1,0 +1,18 @@
+.navbar {
+    // background-color:  #560ecf !important;
+    background-color: #140c59 !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    
+    .navbar-brand {
+      font-size: 1.5rem;
+    }
+    
+    .nav-link {
+      color:#fff;
+      // transition: color 0.3s ease;
+      
+      &:hover {
+        color: var(--bs-primary) !important;
+      }
+    }
+  }
