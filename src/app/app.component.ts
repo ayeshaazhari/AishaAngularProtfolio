@@ -7,7 +7,7 @@ import { Meta, Title } from '@angular/platform-browser';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  constructor(private meta: Meta, private title: Title) {}
+  constructor(public meta: Meta, public title: Title) {}
 
   ngOnInit() {
     this.title.setTitle('Aisha -  MEAN Stack Developer Portfolio');
