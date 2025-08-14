@@ -1,6 +1,9 @@
 {
+
+    "name":"angularprotfolio",
     "$schema": "https://openapi.vercel.sh/vercel.json",
     "outputDirectory": "dist/angular-portfolio",
     "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+   
   }
   
