@@ -1,0 +1,43 @@
+/* download-button.component.css */
+
+.download-btn {
+    position: fixed;
+    top: 35%;
+    background-color: #ffc008; 
+    color: #140c59;
+    text-decoration: none;
+    padding: 12px;
+ 
+    width: 50px; 
+    height: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: width 0.3s ease, background-color 0.3s ease;
+    font-size: 16px;
+  }
+  
+  .download-btn i {
+    color: #140c59;
+    position: fixed;
+  }
+
+  .download-btn i:hover {
+    margin-left: 8px;
+  }
+  
+  .download-btn .btn-text {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .download-btn:hover {
+    width: 200px; 
+    background-color: #ffc008;
+  }
+  
+  .download-btn:hover .btn-text {
+    opacity: 1;
+    margin-left: 30px;
+
+  }
+  
