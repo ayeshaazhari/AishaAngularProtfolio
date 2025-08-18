@@ -13,8 +13,8 @@
             scalable web applications using MongoDB, Express.js, Angular, and Node.js.
           </p>
           <div class="animate__animated animate__fadeInUp animate__delay-3s">
-            <a href="#projects" class="btn btn-outline-light btn-lg me-3">View My Work</a>
-            <a href="#contact" class="btn btn-outline-light btn-lg">Get In Touch</a>
+            <a href="#projects"  (click)="scrollTo('projects'); $event.preventDefault()" class="btn btn-outline-light btn-lg me-3">View My Work</a>
+            <a href="#contact" (click)="scrollTo('contact'); $event.preventDefault()" class="btn btn-outline-light btn-lg">Get In Touch</a>
           </div>
         </div>
         <!-- <div class="col-lg-6 text-center">

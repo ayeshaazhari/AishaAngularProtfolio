@@ -213,7 +213,11 @@ export class PortfolioService {
     { name: 'Git/GitHub', level: 90, category: 'tools', icon: 'bi-git' ,image:"../../../assets/github.png"},
     { name: 'Mocha-Chai', level: 65, category: 'tools', icon: 'bi-cloud',image:"../../../assets/mochachai.jpeg" },
     { name: 'Jest', level: 75, category: 'tools', icon: 'bi-check-circle',image:"../../../assets/jest.png" },
-    { name: 'Postman', level: 85, category: 'tools', icon: 'bi-send',image:"../../../assets/postman.png" }
+    { name: 'Postman', level: 85, category: 'tools', icon: 'bi-send',image:"../../../assets/postman.png" },
+    { name: 'Swagger', level: 85, category: 'tools', icon: 'bi-send',image:"../../../assets/swagger.png" },
+    { name: 'CI/CD', level: 85, category: 'tools', icon: 'bi-send',image:"../../../assets/cicd.jpeg" }
+
+
   ];
 
   getProjects(): Observable<Project[]> {
